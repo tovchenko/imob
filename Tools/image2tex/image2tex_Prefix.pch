@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'image2tex' target in the 'image2tex' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <OpenGL/gl.h>
+#endif

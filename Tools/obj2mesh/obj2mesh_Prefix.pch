@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'obj2mesh' target in the 'obj2mesh' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+
+#import "OBJDefs.h"

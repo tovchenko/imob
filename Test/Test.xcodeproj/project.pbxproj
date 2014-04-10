@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3621D89B144B30570080340A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3621D89A144B30570080340A /* UIKit.framework */; };
+		3621D89D144B30570080340A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3621D89C144B30570080340A /* Foundation.framework */; };
+		3621D89F144B30570080340A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3621D89E144B30570080340A /* CoreGraphics.framework */; };
+		3621D8C0144B326F0080340A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3621D8BF144B326F0080340A /* main.mm */; };
+		3621D8CF144B328D0080340A /* Assembly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621D8C1144B328D0080340A /* Assembly.cpp */; };
+		3621D8D0144B328D0080340A /* Camera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3621D8C4144B328D0080340A /* Camera.mm */; };
+		3621D8D1144B328D0080340A /* Cube.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3621D8C6144B328D0080340A /* Cube.mm */; };
+		3621D8D2144B328D0080340A /* Level1.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3621D8C8144B328D0080340A /* Level1.mm */; };
+		3621D8D3144B328D0080340A /* Motocickle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3621D8CA144B328D0080340A /* Motocickle.mm */; };
+		3621D8D4144B328D0080340A /* TestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3621D8CC144B328D0080340A /* TestAppDelegate.m */; };
+		3621D8D5144B328D0080340A /* TestViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3621D8CE144B328D0080340A /* TestViewController.mm */; };
+		3621D8DD144B32A00080340A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3621D8D7144B32A00080340A /* InfoPlist.strings */; };
+		3621D8DE144B32A00080340A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3621D8D9144B32A00080340A /* MainWindow.xib */; };
+		3621D8DF144B32A00080340A /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3621D8DB144B32A00080340A /* TestViewController.xib */; };
+		3621DBAE144B33910080340A /* iAAgent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAA6144B33910080340A /* iAAgent.cpp */; };
+		3621DBAF144B33910080340A /* iARenderAgent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAA8144B33910080340A /* iARenderAgent.cpp */; };
+		3621DBB0144B33910080340A /* iATouchAgent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAAA144B33910080340A /* iATouchAgent.cpp */; };
+		3621DBB1144B33910080340A /* iACameraComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAAD144B33910080340A /* iACameraComponent.cpp */; };
+		3621DBB2144B33910080340A /* iAComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAB0144B33910080340A /* iAComponent.cpp */; };
+		3621DBB3144B33910080340A /* iADrawableComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAB2144B33910080340A /* iADrawableComponent.cpp */; };
+		3621DBB4144B33910080340A /* iAGUIComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAB4144B33910080340A /* iAGUIComponent.cpp */; };
+		3621DBB5144B33910080340A /* iATouchComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAB7144B33910080340A /* iATouchComponent.cpp */; };
+		3621DBB6144B33910080340A /* iAGUIButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DABB144B33910080340A /* iAGUIButton.cpp */; };
+		3621DBB7144B33910080340A /* iASprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DABD144B33910080340A /* iASprite.cpp */; };
+		3621DBB8144B33910080340A /* iACamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DABF144B33910080340A /* iACamera.cpp */; };
+		3621DBB9144B33910080340A /* iADirector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAC1144B33910080340A /* iADirector.cpp */; };
+		3621DBBA144B33910080340A /* iANode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAC3144B33910080340A /* iANode.cpp */; };
+		3621DBBB144B33910080340A /* iAScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAC5144B33910080340A /* iAScene.cpp */; };
+		3621DBBC144B33910080340A /* iAScheduler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAC7144B33910080340A /* iAScheduler.cpp */; };
+		3621DBBD144B33910080340A /* iASkybox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAC9144B33910080340A /* iASkybox.cpp */; };
+		3621DBBE144B33910080340A /* iATime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DACB144B33910080340A /* iATime.cpp */; };
+		3621DBBF144B33910080340A /* iATouch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DACD144B33910080340A /* iATouch.cpp */; };
+		3621DBC0144B33910080340A /* iATransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DACF144B33910080340A /* iATransform.cpp */; };
+		3621DBC1144B33910080340A /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAD4144B33910080340A /* EAGLView.mm */; };
+		3621DBC2144B33910080340A /* ES1Renderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAD6144B33910080340A /* ES1Renderer.mm */; };
+		3621DBC3144B33910080340A /* iOSContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAD9144B33910080340A /* iOSContext.mm */; };
+		3621DBC4144B33910080340A /* iOSRenderAgent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3621DADC144B33910080340A /* iOSRenderAgent.mm */; };
+		3621DBC5144B33910080340A /* iOSTouchAgent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3621DADE144B33910080340A /* iOSTouchAgent.mm */; };
+		3621DBC6144B33910080340A /* iAssetBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAE0144B33910080340A /* iAssetBundle.cpp */; };
+		3621DBC7144B33910080340A /* iResLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAE2144B33910080340A /* iResLoader.cpp */; };
+		3621DBC8144B33910080340A /* iBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAE5144B33910080340A /* iBuffer.cpp */; };
+		3621DBC9144B33910080340A /* iCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAE7144B33910080340A /* iCamera.cpp */; };
+		3621DBCA144B33910080340A /* iContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAE9144B33910080340A /* iContext.cpp */; };
+		3621DBCB144B33910080340A /* iDrawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAEC144B33910080340A /* iDrawable.cpp */; };
+		3621DBCC144B33910080340A /* iIndexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAEE144B33910080340A /* iIndexBuffer.cpp */; };
+		3621DBCD144B33910080340A /* iMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAF0144B33910080340A /* iMaterial.cpp */; };
+		3621DBCE144B33910080340A /* iMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAF2144B33910080340A /* iMesh.cpp */; };
+		3621DBCF144B33910080340A /* iMeshPart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAF4144B33910080340A /* iMeshPart.cpp */; };
+		3621DBD0144B33910080340A /* iMeshPrimitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAF6144B33910080340A /* iMeshPrimitives.cpp */; };
+		3621DBD1144B33910080340A /* iScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAF8144B33910080340A /* iScene.cpp */; };
+		3621DBD2144B33910080340A /* iTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAFA144B33910080340A /* iTexture.cpp */; };
+		3621DBD3144B33910080340A /* iTextureData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAFC144B33910080340A /* iTextureData.cpp */; };
+		3621DBD4144B33910080340A /* iVertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DAFE144B33910080340A /* iVertexBuffer.cpp */; };
+		3621DBD5144B33910080340A /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DB00144B33910080340A /* stdafx.cpp */; };
+		3621DBE1144B342C0080340A /* libdCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3621DBDE144B33920080340A /* libdCocoa.a */; };
+		3621DBF0144B56EA0080340A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3621DBEF144B56EA0080340A /* OpenGLES.framework */; };
+		3621DBF7144B574B0080340A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3621DBF6144B574B0080340A /* QuartzCore.framework */; };
+		3621DC73144B774A0080340A /* iAAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3621DC72144B774A0080340A /* iAAction.cpp */; };
+		367C23B7145706180041DAFE /* iAIntervalAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 367C23B6145706180041DAFE /* iAIntervalAction.cpp */; };
+		367C23BB145709200041DAFE /* iAImmediateAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 367C23B9145709200041DAFE /* iAImmediateAction.cpp */; };
+		3685972514596FA1008BCFE2 /* iAActionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3685972414596FA1008BCFE2 /* iAActionManager.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3621DBDD144B33920080340A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3621DA83144B33910080340A /* dCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = dCocoa;
+		};
+		3621DBDF144B34210080340A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3621DA83144B33910080340A /* dCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = dCocoa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3621D896144B30570080340A /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3621D89A144B30570080340A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3621D89C144B30570080340A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3621D89E144B30570080340A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3621D8A2144B30570080340A /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		3621D8A8144B30570080340A /* Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
+		3621D8BF144B326F0080340A /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		3621D8C1144B328D0080340A /* Assembly.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Assembly.cpp; sourceTree = "<group>"; };
+		3621D8C2144B328D0080340A /* Assembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assembly.h; sourceTree = "<group>"; };
+		3621D8C3144B328D0080340A /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		3621D8C4144B328D0080340A /* Camera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Camera.mm; sourceTree = "<group>"; };
+		3621D8C5144B328D0080340A /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		3621D8C6144B328D0080340A /* Cube.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Cube.mm; sourceTree = "<group>"; };
+		3621D8C7144B328D0080340A /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level1.h; sourceTree = "<group>"; };
+		3621D8C8144B328D0080340A /* Level1.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Level1.mm; sourceTree = "<group>"; };
+		3621D8C9144B328D0080340A /* Motocickle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motocickle.h; sourceTree = "<group>"; };
+		3621D8CA144B328D0080340A /* Motocickle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Motocickle.mm; sourceTree = "<group>"; };
+		3621D8CB144B328D0080340A /* TestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppDelegate.h; sourceTree = "<group>"; };
+		3621D8CC144B328D0080340A /* TestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppDelegate.m; sourceTree = "<group>"; };
+		3621D8CD144B328D0080340A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		3621D8CE144B328D0080340A /* TestViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestViewController.mm; sourceTree = "<group>"; };
+		3621D8D8144B32A00080340A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		3621D8DA144B32A00080340A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainWindow.xib; sourceTree = "<group>"; };
+		3621D8DC144B32A00080340A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = TestViewController.xib; sourceTree = "<group>"; };
+		3621DA83144B33910080340A /* dCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = dCocoa.xcodeproj; sourceTree = "<group>"; };
+		3621DA8C144B33910080340A /* enable_if.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = enable_if.hpp; sourceTree = "<group>"; };
+		3621DA8D144B33910080340A /* exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exception.hpp; sourceTree = "<group>"; };
+		3621DA8E144B33910080340A /* frustum.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = frustum.hpp; sourceTree = "<group>"; };
+		3621DA8F144B33910080340A /* frustum_culler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = frustum_culler.hpp; sourceTree = "<group>"; };
+		3621DA90144B33910080340A /* jacobi_solver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = jacobi_solver.hpp; sourceTree = "<group>"; };
+		3621DA91144B33910080340A /* lapack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lapack.hpp; sourceTree = "<group>"; };
+		3621DA92144B33910080340A /* lapack_gaussian_elimination.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lapack_gaussian_elimination.hpp; sourceTree = "<group>"; };
+		3621DA93144B33910080340A /* lapack_includes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lapack_includes.hpp; sourceTree = "<group>"; };
+		3621DA94144B33910080340A /* lapack_linear_least_squares.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lapack_linear_least_squares.hpp; sourceTree = "<group>"; };
+		3621DA95144B33910080340A /* lapack_svd.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lapack_svd.hpp; sourceTree = "<group>"; };
+		3621DA96144B33910080340A /* lapack_types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lapack_types.hpp; sourceTree = "<group>"; };
+		3621DA97144B33910080340A /* linear_least_squares.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = linear_least_squares.hpp; sourceTree = "<group>"; };
+		3621DA98144B33910080340A /* math.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = math.hpp; sourceTree = "<group>"; };
+		3621DA99144B33910080340A /* matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix.hpp; sourceTree = "<group>"; };
+		3621DA9A144B33910080340A /* matrix_functors.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_functors.hpp; sourceTree = "<group>"; };
+		3621DA9B144B33910080340A /* qr_decomposition.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = qr_decomposition.hpp; sourceTree = "<group>"; };
+		3621DA9C144B33910080340A /* quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion.hpp; sourceTree = "<group>"; };
+		3621DA9D144B33910080340A /* svd.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = svd.hpp; sourceTree = "<group>"; };
+		3621DA9E144B33910080340A /* tensor3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tensor3.hpp; sourceTree = "<group>"; };
+		3621DA9F144B33910080340A /* tucker3_tensor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tucker3_tensor.hpp; sourceTree = "<group>"; };
+		3621DAA0144B33910080340A /* vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector.hpp; sourceTree = "<group>"; };
+		3621DAA1144B33910080340A /* visibility.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = visibility.hpp; sourceTree = "<group>"; };
+		3621DAA2144B33910080340A /* vmmlib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vmmlib.hpp; sourceTree = "<group>"; };
+		3621DAA3144B33910080340A /* vmmlib_config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vmmlib_config.hpp; sourceTree = "<group>"; };
+		3621DAA6144B33910080340A /* iAAgent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iAAgent.cpp; sourceTree = "<group>"; };
+		3621DAA7144B33910080340A /* iAAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAAgent.h; sourceTree = "<group>"; };
+		3621DAA8144B33910080340A /* iARenderAgent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iARenderAgent.cpp; sourceTree = "<group>"; };
+		3621DAA9144B33910080340A /* iARenderAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iARenderAgent.h; sourceTree = "<group>"; };
+		3621DAAA144B33910080340A /* iATouchAgent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iATouchAgent.cpp; sourceTree = "<group>"; };
+		3621DAAB144B33910080340A /* iATouchAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iATouchAgent.h; sourceTree = "<group>"; };
+		3621DAAD144B33910080340A /* iACameraComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iACameraComponent.cpp; sourceTree = "<group>"; };
+		3621DAAE144B33910080340A /* iACameraComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iACameraComponent.h; sourceTree = "<group>"; };
+		3621DAAF144B33910080340A /* iACameraComponentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iACameraComponentDelegate.h; sourceTree = "<group>"; };
+		3621DAB0144B33910080340A /* iAComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iAComponent.cpp; sourceTree = "<group>"; };
+		3621DAB1144B33910080340A /* iAComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAComponent.h; sourceTree = "<group>"; };
+		3621DAB2144B33910080340A /* iADrawableComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iADrawableComponent.cpp; sourceTree = "<group>"; };
+		3621DAB3144B33910080340A /* iADrawableComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iADrawableComponent.h; sourceTree = "<group>"; };
+		3621DAB4144B33910080340A /* iAGUIComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iAGUIComponent.cpp; sourceTree = "<group>"; };
+		3621DAB5144B33910080340A /* iAGUIComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAGUIComponent.h; sourceTree = "<group>"; };
+		3621DAB6144B33910080340A /* iAGUIComponentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAGUIComponentDelegate.h; sourceTree = "<group>"; };
+		3621DAB7144B33910080340A /* iATouchComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iATouchComponent.cpp; sourceTree = "<group>"; };
+		3621DAB8144B33910080340A /* iATouchComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iATouchComponent.h; sourceTree = "<group>"; };
+		3621DAB9144B33910080340A /* iATouchComponentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iATouchComponentDelegate.h; sourceTree = "<group>"; };
+		3621DABB144B33910080340A /* iAGUIButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iAGUIButton.cpp; sourceTree = "<group>"; };
+		3621DABC144B33910080340A /* iAGUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAGUIButton.h; sourceTree = "<group>"; };
+		3621DABD144B33910080340A /* iASprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iASprite.cpp; sourceTree = "<group>"; };
+		3621DABE144B33910080340A /* iASprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iASprite.h; sourceTree = "<group>"; };
+		3621DABF144B33910080340A /* iACamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iACamera.cpp; sourceTree = "<group>"; };
+		3621DAC0144B33910080340A /* iACamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iACamera.h; sourceTree = "<group>"; };
+		3621DAC1144B33910080340A /* iADirector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iADirector.cpp; sourceTree = "<group>"; };
+		3621DAC2144B33910080340A /* iADirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iADirector.h; sourceTree = "<group>"; };
+		3621DAC3144B33910080340A /* iANode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iANode.cpp; sourceTree = "<group>"; };
+		3621DAC4144B33910080340A /* iANode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iANode.h; sourceTree = "<group>"; };
+		3621DAC5144B33910080340A /* iAScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iAScene.cpp; sourceTree = "<group>"; };
+		3621DAC6144B33910080340A /* iAScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAScene.h; sourceTree = "<group>"; };
+		3621DAC7144B33910080340A /* iAScheduler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iAScheduler.cpp; sourceTree = "<group>"; };
+		3621DAC8144B33910080340A /* iAScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAScheduler.h; sourceTree = "<group>"; };
+		3621DAC9144B33910080340A /* iASkybox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iASkybox.cpp; sourceTree = "<group>"; };
+		3621DACA144B33910080340A /* iASkybox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iASkybox.h; sourceTree = "<group>"; };
+		3621DACB144B33910080340A /* iATime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iATime.cpp; sourceTree = "<group>"; };
+		3621DACC144B33910080340A /* iATime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iATime.h; sourceTree = "<group>"; };
+		3621DACD144B33910080340A /* iATouch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iATouch.cpp; sourceTree = "<group>"; };
+		3621DACE144B33910080340A /* iATouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iATouch.h; sourceTree = "<group>"; };
+		3621DACF144B33910080340A /* iATransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iATransform.cpp; sourceTree = "<group>"; };
+		3621DAD0144B33910080340A /* iATransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iATransform.h; sourceTree = "<group>"; };
+		3621DAD1144B33910080340A /* iMob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMob.h; sourceTree = "<group>"; };
+		3621DAD3144B33910080340A /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		3621DAD4144B33910080340A /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
+		3621DAD5144B33910080340A /* ES1Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES1Renderer.h; sourceTree = "<group>"; };
+		3621DAD6144B33910080340A /* ES1Renderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ES1Renderer.mm; sourceTree = "<group>"; };
+		3621DAD7144B33910080340A /* ESRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRenderer.h; sourceTree = "<group>"; };
+		3621DAD8144B33910080340A /* iOSContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSContext.h; sourceTree = "<group>"; };
+		3621DAD9144B33910080340A /* iOSContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iOSContext.mm; sourceTree = "<group>"; };
+		3621DADA144B33910080340A /* iOSiMob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSiMob.h; sourceTree = "<group>"; };
+		3621DADB144B33910080340A /* iOSRenderAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSRenderAgent.h; sourceTree = "<group>"; };
+		3621DADC144B33910080340A /* iOSRenderAgent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iOSRenderAgent.mm; sourceTree = "<group>"; };
+		3621DADD144B33910080340A /* iOSTouchAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSTouchAgent.h; sourceTree = "<group>"; };
+		3621DADE144B33910080340A /* iOSTouchAgent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iOSTouchAgent.mm; sourceTree = "<group>"; };
+		3621DAE0144B33910080340A /* iAssetBundle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iAssetBundle.cpp; sourceTree = "<group>"; };
+		3621DAE1144B33910080340A /* iAssetBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAssetBundle.h; sourceTree = "<group>"; };
+		3621DAE2144B33910080340A /* iResLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iResLoader.cpp; sourceTree = "<group>"; };
+		3621DAE3144B33910080340A /* iResLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iResLoader.h; sourceTree = "<group>"; };
+		3621DAE5144B33910080340A /* iBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iBuffer.cpp; sourceTree = "<group>"; };
+		3621DAE6144B33910080340A /* iBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBuffer.h; sourceTree = "<group>"; };
+		3621DAE7144B33910080340A /* iCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iCamera.cpp; sourceTree = "<group>"; };
+		3621DAE8144B33910080340A /* iCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCamera.h; sourceTree = "<group>"; };
+		3621DAE9144B33910080340A /* iContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iContext.cpp; sourceTree = "<group>"; };
+		3621DAEA144B33910080340A /* iContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iContext.h; sourceTree = "<group>"; };
+		3621DAEB144B33910080340A /* iDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iDefs.h; sourceTree = "<group>"; };
+		3621DAEC144B33910080340A /* iDrawable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iDrawable.cpp; sourceTree = "<group>"; };
+		3621DAED144B33910080340A /* iDrawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iDrawable.h; sourceTree = "<group>"; };
+		3621DAEE144B33910080340A /* iIndexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iIndexBuffer.cpp; sourceTree = "<group>"; };
+		3621DAEF144B33910080340A /* iIndexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iIndexBuffer.h; sourceTree = "<group>"; };
+		3621DAF0144B33910080340A /* iMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iMaterial.cpp; sourceTree = "<group>"; };
+		3621DAF1144B33910080340A /* iMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMaterial.h; sourceTree = "<group>"; };
+		3621DAF2144B33910080340A /* iMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iMesh.cpp; sourceTree = "<group>"; };
+		3621DAF3144B33910080340A /* iMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMesh.h; sourceTree = "<group>"; };
+		3621DAF4144B33910080340A /* iMeshPart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iMeshPart.cpp; sourceTree = "<group>"; };
+		3621DAF5144B33910080340A /* iMeshPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMeshPart.h; sourceTree = "<group>"; };
+		3621DAF6144B33910080340A /* iMeshPrimitives.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iMeshPrimitives.cpp; sourceTree = "<group>"; };
+		3621DAF7144B33910080340A /* iMeshPrimitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMeshPrimitives.h; sourceTree = "<group>"; };
+		3621DAF8144B33910080340A /* iScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iScene.cpp; sourceTree = "<group>"; };
+		3621DAF9144B33910080340A /* iScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iScene.h; sourceTree = "<group>"; };
+		3621DAFA144B33910080340A /* iTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iTexture.cpp; sourceTree = "<group>"; };
+		3621DAFB144B33910080340A /* iTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTexture.h; sourceTree = "<group>"; };
+		3621DAFC144B33910080340A /* iTextureData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iTextureData.cpp; sourceTree = "<group>"; };
+		3621DAFD144B33910080340A /* iTextureData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTextureData.h; sourceTree = "<group>"; };
+		3621DAFE144B33910080340A /* iVertexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iVertexBuffer.cpp; sourceTree = "<group>"; };
+		3621DAFF144B33910080340A /* iVertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iVertexBuffer.h; sourceTree = "<group>"; };
+		3621DB00144B33910080340A /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
+		3621DB01144B33910080340A /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		3621DBE2144B346C0080340A /* assets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = assets.h; path = Assets/Meta/assets.h; sourceTree = SOURCE_ROOT; };
+		3621DBEF144B56EA0080340A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3621DBF6144B574B0080340A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3621DC72144B774A0080340A /* iAAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iAAction.cpp; sourceTree = "<group>"; };
+		3621DC74144B77780080340A /* iAAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAAction.h; sourceTree = "<group>"; };
+		367C23B6145706180041DAFE /* iAIntervalAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iAIntervalAction.cpp; sourceTree = "<group>"; };
+		367C23B8145706240041DAFE /* iAIntervalAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAIntervalAction.h; sourceTree = "<group>"; };
+		367C23B9145709200041DAFE /* iAImmediateAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iAImmediateAction.cpp; sourceTree = "<group>"; };
+		367C23BA145709200041DAFE /* iAImmediateAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAImmediateAction.h; sourceTree = "<group>"; };
+		3685972414596FA1008BCFE2 /* iAActionManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iAActionManager.cpp; sourceTree = "<group>"; };
+		3685972614596FBD008BCFE2 /* iAActionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAActionManager.h; sourceTree = "<group>"; };
+		3689F2F814771FF500D4E7C3 /* iAActionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAActionDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3621D893144B30570080340A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3621DBE1144B342C0080340A /* libdCocoa.a in Frameworks */,
+				3621DBF7144B574B0080340A /* QuartzCore.framework in Frameworks */,
+				3621DBF0144B56EA0080340A /* OpenGLES.framework in Frameworks */,
+				3621D89B144B30570080340A /* UIKit.framework in Frameworks */,
+				3621D89D144B30570080340A /* Foundation.framework in Frameworks */,
+				3621D89F144B30570080340A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3621D88B144B30570080340A = {
+			isa = PBXGroup;
+			children = (
+				3621D8E0144B33900080340A /* iMob3D */,
+				3621D8A0144B30570080340A /* Test */,
+				3621D899144B30570080340A /* Frameworks */,
+				3621D897144B30570080340A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3621D897144B30570080340A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3621D896144B30570080340A /* Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3621D899144B30570080340A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3621DBF6144B574B0080340A /* QuartzCore.framework */,
+				3621DBEF144B56EA0080340A /* OpenGLES.framework */,
+				3621D89A144B30570080340A /* UIKit.framework */,
+				3621D89C144B30570080340A /* Foundation.framework */,
+				3621D89E144B30570080340A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3621D8A0144B30570080340A /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				3621DBE2144B346C0080340A /* assets.h */,
+				3621D8C1144B328D0080340A /* Assembly.cpp */,
+				3621D8C2144B328D0080340A /* Assembly.h */,
+				3621D8C3144B328D0080340A /* Camera.h */,
+				3621D8C4144B328D0080340A /* Camera.mm */,
+				3621D8C5144B328D0080340A /* Cube.h */,
+				3621D8C6144B328D0080340A /* Cube.mm */,
+				3621D8C7144B328D0080340A /* Level1.h */,
+				3621D8C8144B328D0080340A /* Level1.mm */,
+				3621D8C9144B328D0080340A /* Motocickle.h */,
+				3621D8CA144B328D0080340A /* Motocickle.mm */,
+				3621D8CB144B328D0080340A /* TestAppDelegate.h */,
+				3621D8CC144B328D0080340A /* TestAppDelegate.m */,
+				3621D8CD144B328D0080340A /* TestViewController.h */,
+				3621D8CE144B328D0080340A /* TestViewController.mm */,
+				3621D8A1144B30570080340A /* Supporting Files */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		3621D8A1144B30570080340A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3621D8D6144B32A00080340A /* en.lproj */,
+				3621D8BF144B326F0080340A /* main.mm */,
+				3621D8A2144B30570080340A /* Test-Info.plist */,
+				3621D8A8144B30570080340A /* Test-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3621D8D6144B32A00080340A /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				3621D8D7144B32A00080340A /* InfoPlist.strings */,
+				3621D8D9144B32A00080340A /* MainWindow.xib */,
+				3621D8DB144B32A00080340A /* TestViewController.xib */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		3621D8E0144B33900080340A /* iMob3D */ = {
+			isa = PBXGroup;
+			children = (
+				3621D8E1144B33900080340A /* 3rdParty */,
+				3621DAA4144B33910080340A /* Automator */,
+				3621DAD2144B33910080340A /* iOS */,
+				3621DADF144B33910080340A /* Loaders */,
+				3621DAE4144B33910080340A /* Render */,
+				3621DB00144B33910080340A /* stdafx.cpp */,
+				3621DB01144B33910080340A /* stdafx.h */,
+				3621DAD1144B33910080340A /* iMob.h */,
+			);
+			name = iMob3D;
+			path = ../iMob3D;
+			sourceTree = "<group>";
+		};
+		3621D8E1144B33900080340A /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				3621DA28144B33910080340A /* dCocoa */,
+				3621DA8B144B33910080340A /* vmmlib */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		3621DA28144B33910080340A /* dCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				3621DA81144B33910080340A /* Platforms */,
+			);
+			path = dCocoa;
+			sourceTree = "<group>";
+		};
+		3621DA81144B33910080340A /* Platforms */ = {
+			isa = PBXGroup;
+			children = (
+				3621DA82144B33910080340A /* iOS */,
+			);
+			path = Platforms;
+			sourceTree = "<group>";
+		};
+		3621DA82144B33910080340A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3621DA83144B33910080340A /* dCocoa.xcodeproj */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		3621DA84144B33910080340A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3621DBDE144B33920080340A /* libdCocoa.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3621DA8B144B33910080340A /* vmmlib */ = {
+			isa = PBXGroup;
+			children = (
+				3621DA8C144B33910080340A /* enable_if.hpp */,
+				3621DA8D144B33910080340A /* exception.hpp */,
+				3621DA8E144B33910080340A /* frustum.hpp */,
+				3621DA8F144B33910080340A /* frustum_culler.hpp */,
+				3621DA90144B33910080340A /* jacobi_solver.hpp */,
+				3621DA91144B33910080340A /* lapack.hpp */,
+				3621DA92144B33910080340A /* lapack_gaussian_elimination.hpp */,
+				3621DA93144B33910080340A /* lapack_includes.hpp */,
+				3621DA94144B33910080340A /* lapack_linear_least_squares.hpp */,
+				3621DA95144B33910080340A /* lapack_svd.hpp */,
+				3621DA96144B33910080340A /* lapack_types.hpp */,
+				3621DA97144B33910080340A /* linear_least_squares.hpp */,
+				3621DA98144B33910080340A /* math.hpp */,
+				3621DA99144B33910080340A /* matrix.hpp */,
+				3621DA9A144B33910080340A /* matrix_functors.hpp */,
+				3621DA9B144B33910080340A /* qr_decomposition.hpp */,
+				3621DA9C144B33910080340A /* quaternion.hpp */,
+				3621DA9D144B33910080340A /* svd.hpp */,
+				3621DA9E144B33910080340A /* tensor3.hpp */,
+				3621DA9F144B33910080340A /* tucker3_tensor.hpp */,
+				3621DAA0144B33910080340A /* vector.hpp */,
+				3621DAA1144B33910080340A /* visibility.hpp */,
+				3621DAA2144B33910080340A /* vmmlib.hpp */,
+				3621DAA3144B33910080340A /* vmmlib_config.hpp */,
+			);
+			path = vmmlib;
+			sourceTree = "<group>";
+		};
+		3621DAA4144B33910080340A /* Automator */ = {
+			isa = PBXGroup;
+			children = (
+				3621DC71144B77250080340A /* Actions */,
+				3621DAA5144B33910080340A /* Agents */,
+				3621DAAC144B33910080340A /* Components */,
+				3621DABA144B33910080340A /* GUI */,
+				3621DABF144B33910080340A /* iACamera.cpp */,
+				3621DAC0144B33910080340A /* iACamera.h */,
+				3621DAC1144B33910080340A /* iADirector.cpp */,
+				3621DAC2144B33910080340A /* iADirector.h */,
+				3621DAC3144B33910080340A /* iANode.cpp */,
+				3621DAC4144B33910080340A /* iANode.h */,
+				3621DAC5144B33910080340A /* iAScene.cpp */,
+				3621DAC6144B33910080340A /* iAScene.h */,
+				3621DAC7144B33910080340A /* iAScheduler.cpp */,
+				3621DAC8144B33910080340A /* iAScheduler.h */,
+				3621DAC9144B33910080340A /* iASkybox.cpp */,
+				3621DACA144B33910080340A /* iASkybox.h */,
+				3621DACB144B33910080340A /* iATime.cpp */,
+				3621DACC144B33910080340A /* iATime.h */,
+				3621DACD144B33910080340A /* iATouch.cpp */,
+				3621DACE144B33910080340A /* iATouch.h */,
+				3621DACF144B33910080340A /* iATransform.cpp */,
+				3621DAD0144B33910080340A /* iATransform.h */,
+			);
+			path = Automator;
+			sourceTree = "<group>";
+		};
+		3621DAA5144B33910080340A /* Agents */ = {
+			isa = PBXGroup;
+			children = (
+				3621DAA6144B33910080340A /* iAAgent.cpp */,
+				3621DAA7144B33910080340A /* iAAgent.h */,
+				3621DAA8144B33910080340A /* iARenderAgent.cpp */,
+				3621DAA9144B33910080340A /* iARenderAgent.h */,
+				3621DAAA144B33910080340A /* iATouchAgent.cpp */,
+				3621DAAB144B33910080340A /* iATouchAgent.h */,
+			);
+			path = Agents;
+			sourceTree = "<group>";
+		};
+		3621DAAC144B33910080340A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3621DAAD144B33910080340A /* iACameraComponent.cpp */,
+				3621DAAE144B33910080340A /* iACameraComponent.h */,
+				3621DAAF144B33910080340A /* iACameraComponentDelegate.h */,
+				3621DAB0144B33910080340A /* iAComponent.cpp */,
+				3621DAB1144B33910080340A /* iAComponent.h */,
+				3621DAB2144B33910080340A /* iADrawableComponent.cpp */,
+				3621DAB3144B33910080340A /* iADrawableComponent.h */,
+				3621DAB4144B33910080340A /* iAGUIComponent.cpp */,
+				3621DAB5144B33910080340A /* iAGUIComponent.h */,
+				3621DAB6144B33910080340A /* iAGUIComponentDelegate.h */,
+				3621DAB7144B33910080340A /* iATouchComponent.cpp */,
+				3621DAB8144B33910080340A /* iATouchComponent.h */,
+				3621DAB9144B33910080340A /* iATouchComponentDelegate.h */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3621DABA144B33910080340A /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				3621DABB144B33910080340A /* iAGUIButton.cpp */,
+				3621DABC144B33910080340A /* iAGUIButton.h */,
+				3621DABD144B33910080340A /* iASprite.cpp */,
+				3621DABE144B33910080340A /* iASprite.h */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		3621DAD2144B33910080340A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3621DAD3144B33910080340A /* EAGLView.h */,
+				3621DAD4144B33910080340A /* EAGLView.mm */,
+				3621DAD5144B33910080340A /* ES1Renderer.h */,
+				3621DAD6144B33910080340A /* ES1Renderer.mm */,
+				3621DAD7144B33910080340A /* ESRenderer.h */,
+				3621DAD8144B33910080340A /* iOSContext.h */,
+				3621DAD9144B33910080340A /* iOSContext.mm */,
+				3621DADA144B33910080340A /* iOSiMob.h */,
+				3621DADB144B33910080340A /* iOSRenderAgent.h */,
+				3621DADC144B33910080340A /* iOSRenderAgent.mm */,
+				3621DADD144B33910080340A /* iOSTouchAgent.h */,
+				3621DADE144B33910080340A /* iOSTouchAgent.mm */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		3621DADF144B33910080340A /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				3621DAE0144B33910080340A /* iAssetBundle.cpp */,
+				3621DAE1144B33910080340A /* iAssetBundle.h */,
+				3621DAE2144B33910080340A /* iResLoader.cpp */,
+				3621DAE3144B33910080340A /* iResLoader.h */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		3621DAE4144B33910080340A /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				3621DAE5144B33910080340A /* iBuffer.cpp */,
+				3621DAE6144B33910080340A /* iBuffer.h */,
+				3621DAE7144B33910080340A /* iCamera.cpp */,
+				3621DAE8144B33910080340A /* iCamera.h */,
+				3621DAE9144B33910080340A /* iContext.cpp */,
+				3621DAEA144B33910080340A /* iContext.h */,
+				3621DAEB144B33910080340A /* iDefs.h */,
+				3621DAEC144B33910080340A /* iDrawable.cpp */,
+				3621DAED144B33910080340A /* iDrawable.h */,
+				3621DAEE144B33910080340A /* iIndexBuffer.cpp */,
+				3621DAEF144B33910080340A /* iIndexBuffer.h */,
+				3621DAF0144B33910080340A /* iMaterial.cpp */,
+				3621DAF1144B33910080340A /* iMaterial.h */,
+				3621DAF2144B33910080340A /* iMesh.cpp */,
+				3621DAF3144B33910080340A /* iMesh.h */,
+				3621DAF4144B33910080340A /* iMeshPart.cpp */,
+				3621DAF5144B33910080340A /* iMeshPart.h */,
+				3621DAF6144B33910080340A /* iMeshPrimitives.cpp */,
+				3621DAF7144B33910080340A /* iMeshPrimitives.h */,
+				3621DAF8144B33910080340A /* iScene.cpp */,
+				3621DAF9144B33910080340A /* iScene.h */,
+				3621DAFA144B33910080340A /* iTexture.cpp */,
+				3621DAFB144B33910080340A /* iTexture.h */,
+				3621DAFC144B33910080340A /* iTextureData.cpp */,
+				3621DAFD144B33910080340A /* iTextureData.h */,
+				3621DAFE144B33910080340A /* iVertexBuffer.cpp */,
+				3621DAFF144B33910080340A /* iVertexBuffer.h */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		3621DC71144B77250080340A /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				3685972414596FA1008BCFE2 /* iAActionManager.cpp */,
+				3685972614596FBD008BCFE2 /* iAActionManager.h */,
+				3621DC72144B774A0080340A /* iAAction.cpp */,
+				3621DC74144B77780080340A /* iAAction.h */,
+				367C23B6145706180041DAFE /* iAIntervalAction.cpp */,
+				367C23B8145706240041DAFE /* iAIntervalAction.h */,
+				367C23B9145709200041DAFE /* iAImmediateAction.cpp */,
+				367C23BA145709200041DAFE /* iAImmediateAction.h */,
+				3689F2F814771FF500D4E7C3 /* iAActionDelegate.h */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3621D895144B30570080340A /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3621D8B7144B30570080340A /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				3621D892144B30570080340A /* Sources */,
+				3621D893144B30570080340A /* Frameworks */,
+				3621D894144B30570080340A /* Resources */,
+				3621DBED144B37170080340A /* Copy Assets Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3621DBE0144B34210080340A /* PBXTargetDependency */,
+			);
+			name = Test;
+			productName = Test;
+			productReference = 3621D896144B30570080340A /* Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3621D88D144B30570080340A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Gameprom;
+			};
+			buildConfigurationList = 3621D890144B30570080340A /* Build configuration list for PBXProject "Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3621D88B144B30570080340A;
+			productRefGroup = 3621D897144B30570080340A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3621DA84144B33910080340A /* Products */;
+					ProjectRef = 3621DA83144B33910080340A /* dCocoa.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3621D895144B30570080340A /* Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3621DBDE144B33920080340A /* libdCocoa.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdCocoa.a;
+			remoteRef = 3621DBDD144B33920080340A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3621D894144B30570080340A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3621D8DD144B32A00080340A /* InfoPlist.strings in Resources */,
+				3621D8DE144B32A00080340A /* MainWindow.xib in Resources */,
+				3621D8DF144B32A00080340A /* TestViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3621DBED144B37170080340A /* Copy Assets Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Assets Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Assets/Meta/copy.sh\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3621D892144B30570080340A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3621D8C0144B326F0080340A /* main.mm in Sources */,
+				3621D8CF144B328D0080340A /* Assembly.cpp in Sources */,
+				3621D8D0144B328D0080340A /* Camera.mm in Sources */,
+				3621D8D1144B328D0080340A /* Cube.mm in Sources */,
+				3621D8D2144B328D0080340A /* Level1.mm in Sources */,
+				3621D8D3144B328D0080340A /* Motocickle.mm in Sources */,
+				3621D8D4144B328D0080340A /* TestAppDelegate.m in Sources */,
+				3621D8D5144B328D0080340A /* TestViewController.mm in Sources */,
+				3621DBAE144B33910080340A /* iAAgent.cpp in Sources */,
+				3621DBAF144B33910080340A /* iARenderAgent.cpp in Sources */,
+				3621DBB0144B33910080340A /* iATouchAgent.cpp in Sources */,
+				3621DBB1144B33910080340A /* iACameraComponent.cpp in Sources */,
+				3621DBB2144B33910080340A /* iAComponent.cpp in Sources */,
+				3621DBB3144B33910080340A /* iADrawableComponent.cpp in Sources */,
+				3621DBB4144B33910080340A /* iAGUIComponent.cpp in Sources */,
+				3621DBB5144B33910080340A /* iATouchComponent.cpp in Sources */,
+				3621DBB6144B33910080340A /* iAGUIButton.cpp in Sources */,
+				3621DBB7144B33910080340A /* iASprite.cpp in Sources */,
+				3621DBB8144B33910080340A /* iACamera.cpp in Sources */,
+				3621DBB9144B33910080340A /* iADirector.cpp in Sources */,
+				3621DBBA144B33910080340A /* iANode.cpp in Sources */,
+				3621DBBB144B33910080340A /* iAScene.cpp in Sources */,
+				3621DBBC144B33910080340A /* iAScheduler.cpp in Sources */,
+				3621DBBD144B33910080340A /* iASkybox.cpp in Sources */,
+				3621DBBE144B33910080340A /* iATime.cpp in Sources */,
+				3621DBBF144B33910080340A /* iATouch.cpp in Sources */,
+				3621DBC0144B33910080340A /* iATransform.cpp in Sources */,
+				3621DBC1144B33910080340A /* EAGLView.mm in Sources */,
+				3621DBC2144B33910080340A /* ES1Renderer.mm in Sources */,
+				3621DBC3144B33910080340A /* iOSContext.mm in Sources */,
+				3621DBC4144B33910080340A /* iOSRenderAgent.mm in Sources */,
+				3621DBC5144B33910080340A /* iOSTouchAgent.mm in Sources */,
+				3621DBC6144B33910080340A /* iAssetBundle.cpp in Sources */,
+				3621DBC7144B33910080340A /* iResLoader.cpp in Sources */,
+				3621DBC8144B33910080340A /* iBuffer.cpp in Sources */,
+				3621DBC9144B33910080340A /* iCamera.cpp in Sources */,
+				3621DBCA144B33910080340A /* iContext.cpp in Sources */,
+				3621DBCB144B33910080340A /* iDrawable.cpp in Sources */,
+				3621DBCC144B33910080340A /* iIndexBuffer.cpp in Sources */,
+				3621DBCD144B33910080340A /* iMaterial.cpp in Sources */,
+				3621DBCE144B33910080340A /* iMesh.cpp in Sources */,
+				3621DBCF144B33910080340A /* iMeshPart.cpp in Sources */,
+				3621DBD0144B33910080340A /* iMeshPrimitives.cpp in Sources */,
+				3621DBD1144B33910080340A /* iScene.cpp in Sources */,
+				3621DBD2144B33910080340A /* iTexture.cpp in Sources */,
+				3621DBD3144B33910080340A /* iTextureData.cpp in Sources */,
+				3621DBD4144B33910080340A /* iVertexBuffer.cpp in Sources */,
+				3621DBD5144B33910080340A /* stdafx.cpp in Sources */,
+				3621DC73144B774A0080340A /* iAAction.cpp in Sources */,
+				367C23B7145706180041DAFE /* iAIntervalAction.cpp in Sources */,
+				367C23BB145709200041DAFE /* iAImmediateAction.cpp in Sources */,
+				3685972514596FA1008BCFE2 /* iAActionManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3621DBE0144B34210080340A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = dCocoa;
+			targetProxy = 3621DBDF144B34210080340A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3621D8D7144B32A00080340A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3621D8D8144B32A00080340A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3621D8D9144B32A00080340A /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3621D8DA144B32A00080340A /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		3621D8DB144B32A00080340A /* TestViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3621D8DC144B32A00080340A /* en */,
+			);
+			name = TestViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3621D8B5144B30570080340A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)\"/usr/local/include",
+					./../iMob3D/3rdParty,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3621D8B6144B30570080340A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)\"/usr/local/include",
+					./../iMob3D/3rdParty,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3621D8B8144B30570080340A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
+				INFOPLIST_FILE = "Test/Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3621D8B9144B30570080340A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
+				INFOPLIST_FILE = "Test/Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3621D890144B30570080340A /* Build configuration list for PBXProject "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3621D8B5144B30570080340A /* Debug */,
+				3621D8B6144B30570080340A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3621D8B7144B30570080340A /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3621D8B8144B30570080340A /* Debug */,
+				3621D8B9144B30570080340A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3621D88D144B30570080340A /* Project object */;
+}
